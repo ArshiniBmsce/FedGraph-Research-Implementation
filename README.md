@@ -2,12 +2,12 @@
 
 This project demonstrates a federated learning setup using **Graph Convolutional Networks (GCNs)** across multiple clients (2 in this case) on graph datasets such as **Cora**, **CiteSeer**, and **KarateClub**. The clients train their models on local datasets and send the learned parameters to a central server for aggregation and further training.
 
----
+
 
 ## Reseach Paper Link: 
 [https://ieeexplore.ieee.org/abstract/document/9606516](https://ieeexplore.ieee.org/abstract/document/9606516)
 
----
+
 
 ## Datasets
 We use the following datasets for training the GCN models:
@@ -15,7 +15,7 @@ We use the following datasets for training the GCN models:
 2. **CiteSeer**: A citation dataset with 3327 nodes, 4732 edges, and 6 classes.
 3. **KarateClub**: A social network dataset with 34 nodes, 78 edges, and 2 classes.
 
----
+
 
 ## Model
 The **GCN model** used for both clients includes:
@@ -23,7 +23,7 @@ The **GCN model** used for both clients includes:
 - **Linear Layer**: Used for classification into dataset-specific classes.
 - **ReLU Activation**: Applied after graph convolution.
 
----
+
 
 ## Project Structure
 ### Client Code
@@ -37,4 +37,4 @@ Each client performs the following operations:
 2. **Update model**: The server loads these parameters and updates its own model.
 3. **Further training**: Optionally, the server can perform additional training using the aggregated parameters.
 
----
+
